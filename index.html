@@ -10,17 +10,34 @@
     <title>Sliding login</title>
 </head>
 <body>
+        <div class="show-login-btn"><i class="fa fa-sign-in-alt"></i>Show Login Form</div>
+
+
+
+
+
+
     <div class="login-box">
-            <h1>Welcome</h1>
+        <div class="hide-login-btn"> <i class="fa fa-times"></i> </div> 
+        
             <form class="login-form"  action="index.html">
-                <div class="hide-login-btn"> <i class="fa fa-times"></i>  </div>
+
+                <h1>Welcome</h1>
                 <input  class="txtb" type="text" name="" placeholder="Username">
                 <input class="txtb" type="password" name="" placeholder="Password">
                 <input class="login-btn" type="submit" name="" value="Submit">
 
-
+            
             </form>
 
     </div>
+    <script>
+    $('.show-login-btn').on('click', function(){
+        $('.login-box').toggleClass('showed');
+    });
+    $('.hide-login-btn').on('click', function(){
+        $('.login-box').toggleClass('showed');
+    });
+    </script>
 </body>
 </html>
